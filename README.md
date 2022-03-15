@@ -11,7 +11,7 @@ Exposed Services
 **Nmap scan results for each machine reveal the below services and OS details:**
   nmap -A 192.168.1.110
   nmap -sV 192.168.1.110
-  ![Screen Shots/Screen Shot 2022-03-14 at 8.17.28 PM.png]
+  ![Nmap Scan Output](Screen Shots/Screen Shot 2022-03-14 at 8.17.28 PM.png)
 This scan identifies the services below as potential points of entry:
 Target 1
 List of
