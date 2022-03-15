@@ -8,8 +8,8 @@ Critical Vulnerabilities
 Exploitation
 Exposed Services
 
-Nmap scan results for each machine reveal the below services and OS details:
-$ nmap ... # TODO: Add command to Scan Target 1
+**Nmap scan results for each machine reveal the below services and OS details:**
+$ nmap -A 192.168.1.110 OR nmap -sV 192.168.1.110
   # TODO: Insert scan output
 This scan identifies the services below as potential points of entry:
 Target 1
