@@ -1,6 +1,6 @@
 # Cybersecurity Red &amp; Blue Teaming Project
 
-Red Team: Summary of Operations
+## Red Team: Summary of Operations
 Table of Contents
 Exposed Services
 Critical Vulnerabilities
@@ -8,9 +8,10 @@ Exploitation
 Exposed Services
 
 **Nmap scan results for each machine reveal the below services and OS details:**
-  nmap -A 192.168.1.110 or nmap -sV 192.168.1.110
+  __nmap -A 192.168.1.110 or nmap -sV 192.168.1.110__
   ![Nmap Scan Output](https://github.com/abge0386/Final-Project/blob/main/Screen%20Shots/Screen%20Shot%202022-03-14%20at%208.17.28%20PM.png)
   ![Nmap Scan Output 2](https://github.com/abge0386/Final-Project/blob/main/Screen%20Shots/Screen%20Shot%202022-03-14%20at%208.19.16%20PM.png)
+
 This scan identifies the services below as potential points of entry:
 Target 1
 List of
