@@ -1,5 +1,4 @@
-# Final-Project
-## Cybersecurity Red &amp; Blue Teaming Project
+# Cybersecurity Red &amp; Blue Teaming Project
 
 Red Team: Summary of Operations
 Table of Contents
