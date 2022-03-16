@@ -50,10 +50,10 @@ TODO: Include the command run
 
 ### Network Topology
 The following machines were identified on the network:
-- Name of VM 1
-  - **Operating System**:
-  - **Purpose**:
-  - **IP Address**:
+- Kali Machine/Attacking Machine
+  - **Operating System**: Kali Linux
+  - **Purpose**: Attacker
+  - **IP Address**: 192.168
 - Name of VM 2
   - **Operating System**:
   - **Purpose**:
@@ -61,9 +61,7 @@ The following machines were identified on the network:
 - Etc.
 
 ### Description of Targets
-_TODO: Answer the questions below._
-
-The target of this attack was: `Target 1` (TODO: IP Address).
+The target of this attack was: *`Target 1` 192.168.1.110*
 
 Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are possible ports of entry for attackers. As such, the following alerts have been implemented:
 
@@ -72,21 +70,21 @@ Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are pos
 Traffic to these services should be carefully monitored. To this end, we have implemented the alerts below:
 #### Name of Alert 1
 _TODO: Replace `Alert 1` with the name of the alert._
-Alert 1 is implemented as follows:
-  - **Metric**: TODO
-  - **Threshold**: TODO
-  - **Vulnerability Mitigated**: TODO
+Excessive HTTP Errors is implemented as follows:
+  - **Metric**: Packetbeat
+  - **Threshold**: 400 Response Status Codes
+  - **Vulnerability Mitigated**: Brute Force Attacks
   - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
 #### Name of Alert 2
-Alert 2 is implemented as follows:
-  - **Metric**: TODO
-  - **Threshold**: TODO
+HTTP Request Size Monitor is implemented as follows:
+  - **Metric**: Packetbeat
+  - **Threshold**: 3500 bytes
   - **Vulnerability Mitigated**: TODO
   - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
 #### Name of Alert 3
-Alert 3 is implemented as follows:
-  - **Metric**: TODO
-  - **Threshold**: TODO
+CPU Usage Monitor is implemented as follows:
+  - **Metric**: Metricbeat
+  - **Threshold**: .5 *****
   - **Vulnerability Mitigated**: TODO
   - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
 _TODO Note: Explain at least 3 alerts. Add more if time allows._
