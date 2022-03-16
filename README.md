@@ -12,6 +12,7 @@ Exposed Services
   nmap -A 192.168.1.110
   nmap -sV 192.168.1.110
   ![Nmap Scan Output](https://github.com/abge0386/Final-Project/blob/main/Screen%20Shots/Screen%20Shot%202022-03-14%20at%208.17.28%20PM.png)
+  ![Nmap Scan Output 2](https://github.com/abge0386/Final-Project/blob/main/Screen%20Shots/Screen%20Shot%202022-03-14%20at%208.19.16%20PM.png)
 This scan identifies the services below as potential points of entry:
 Target 1
 List of
