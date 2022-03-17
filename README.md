@@ -17,7 +17,6 @@ Target 1
 List of
 Exposed Services
 
-Target 1
 List of
 Critical
 Vulnerabilities
@@ -50,12 +49,17 @@ TODO: Include the command run
 ### Network Topology
 The following machines were identified on the network:
 - Kali Machine/Attacking Machine
-  - **Operating System**: Kali Linux
+  - **Operating System**: Linux
   - **Purpose**: Attacker
   - **IP Address**: 192.168.1.90
 - Target/Victim:
   - **Operating System**: Linux
   - **Purpose**: Target Machine
+  - **IP Address**: 192.168.1.100
+
+- ELK:
+  - **Operating System**: Linux
+  - **Purpose**: Logs events
   - **IP Address**: 192.168.1.110
 
 ### Description of Targets
