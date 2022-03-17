@@ -16,8 +16,7 @@ This scan identifies the services below as potential points of entry:
 Target 1
 List of
 Exposed Services
-TODO: Fill out the list below. Include severity, and CVE numbers, if possible.
-The following vulnerabilities were identified on each target:
+
 Target 1
 List of
 Critical
@@ -67,21 +66,19 @@ Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are pos
 ### Monitoring the Targets
 
 Traffic to these services should be carefully monitored. To this end, we have implemented the alerts below:
-#### Name of Alert 1
-Replace `Alert 1` with the name of the alert._
-Excessive HTTP Errors is implemented as follows:
+#### Excessive HTTP Errors is implemented as follows:
   - **Metric**: Packetbeat
   - **Threshold**: 400 Response Status Codes
   - **Vulnerability Mitigated**: Brute Force Attacks
   - **Reliability**: This should not generate too many false positives, as the threshold is set accurately.
-#### Name of Alert 2
-HTTP Request Size Monitor is implemented as follows:
+
+#### HTTP Request Size Monitor is implemented as follows:
   - **Metric**: Packetbeat
   - **Threshold**: 3500 bytes
   - **Vulnerability Mitigated**: 
   - **Reliability**: This is quite reliable, as the threshold has been set accurately.
-#### Name of Alert 3
-CPU Usage Monitor is implemented as follows:
+
+#### CPU Usage Monitor is implemented as follows:
   - **Metric**: Metricbeat
   - **Threshold**: .5
   - **Vulnerability Mitigated**: Malware, cryptomining 
