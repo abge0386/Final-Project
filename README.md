@@ -25,10 +25,10 @@ Exploitation
 TODO: Fill out the details below. Include screenshots where possible.
 The Red Team was able to penetrate Target 1 and retrieve the following confidential data:
 Target 1
-flag1.txt: TODO: Insert flag1.txt hash value
-Exploit Used
-TODO: Identify the exploit used
-TODO: Include the command run
+flag1.txt: b9bbcb33e11b80be759c4e844862482d
+Exploit Used:
+TODO: wp-scan --url http://192.168.1.110/wordpress --enumerate u
+![Wordpress Enumeration] 
 flag2.txt: TODO: Insert flag2.txt hash value
 Exploit Used
 TODO: Identify the exploit used
