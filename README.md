@@ -53,12 +53,11 @@ The following machines were identified on the network:
 - Kali Machine/Attacking Machine
   - **Operating System**: Kali Linux
   - **Purpose**: Attacker
-  - **IP Address**: 192.168
-- Name of VM 2
-  - **Operating System**:
-  - **Purpose**:
-  - **IP Address**:
-- Etc.
+  - **IP Address**: 192.168.1.90
+- Target/Victim:
+  - **Operating System**: Linux
+  - **Purpose**: Target Machine
+  - **IP Address**: 192.168.1.110
 
 ### Description of Targets
 The target of this attack was: *`Target 1` 192.168.1.110*
@@ -69,26 +68,24 @@ Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are pos
 
 Traffic to these services should be carefully monitored. To this end, we have implemented the alerts below:
 #### Name of Alert 1
-_TODO: Replace `Alert 1` with the name of the alert._
+Replace `Alert 1` with the name of the alert._
 Excessive HTTP Errors is implemented as follows:
   - **Metric**: Packetbeat
   - **Threshold**: 400 Response Status Codes
   - **Vulnerability Mitigated**: Brute Force Attacks
-  - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
+  - **Reliability**: This should not generate too many false positives, as the threshold is set accurately.
 #### Name of Alert 2
 HTTP Request Size Monitor is implemented as follows:
   - **Metric**: Packetbeat
   - **Threshold**: 3500 bytes
-  - **Vulnerability Mitigated**: TODO
-  - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
+  - **Vulnerability Mitigated**: 
+  - **Reliability**: This is quite reliable, as the threshold has been set accurately.
 #### Name of Alert 3
 CPU Usage Monitor is implemented as follows:
   - **Metric**: Metricbeat
-  - **Threshold**: .5 *****
-  - **Vulnerability Mitigated**: TODO
-  - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
-_TODO Note: Explain at least 3 alerts. Add more if time allows._
-
+  - **Threshold**: .5
+  - **Vulnerability Mitigated**: Malware, cryptomining 
+  - **Reliability**: This is quite reliable, as the CPU usage should has been established.
 ### Suggestions for Going Further (Optional)
 _TODO_: 
 - Each alert above pertains to a specific vulnerability/exploit. Recall that alerts only detect malicious behavior, but do not stop it. For each vulnerability/exploit identified by the alerts above, suggest a patch. E.g., implementing a blocklist is an effective tactic against brute-force attacks. It is not necessary to explain _how_ to implement each patch.
