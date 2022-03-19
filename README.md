@@ -39,10 +39,12 @@ Exploitation
 
 The Red Team was able to penetrate Target 1 and retrieve the following confidential data:
 Target 1
+![Flag 1 located on page source](https://github.com/abge0386/Final-Project/blob/main/Screen%20Shots/Screen%20Shot%202022-03-14%20at%209.02.16%20PM.png)
 flag1.txt: b9bbcb33e11b80be759c4e844862482d
 Exploit Used:
-![Wordpress Enumeration]() 
+![Wordpress Enumeration](https://github.com/abge0386/Final-Project/blob/main/Screen%20Shots/Wordpress%20Enumeration.png) 
 ![Wordpress Enumeration]()
+
 
 
 flag2.txt: TODO: Insert flag2.txt hash value
