@@ -3,13 +3,13 @@
 ## Red Team: Summary of Operations
 ### Table of Contents ##
 
-*Exposed Services
+*Exposed Services*
 
-*Critical Vulnerabilities
+*Critical Vulnerabilities*
 
-*Exploitation
+*Exploitation*
 
-*Exposed Services
+*Exposed Services*
 
 **Nmap scan results for each machine reveal the below services and OS details:**
   __nmap -A 192.168.1.110 or nmap -sV 192.168.1.110__
@@ -43,14 +43,20 @@ Improper Privilege Managements (CWE-269)
 
 **Exploitation**
 Target 1: 
-The Red Team was able to penetrate Target 1 and retrieve the following confidential data:
+The Red Team was able to penetrate Target 1 and retrieve the following confidential data.
+The commands used were:
+ssh michael@192.168.1.110 -p22
+Guessed passwored to be "michael"
+grep -rl 'flag1*'
+located in /var/www/html/service.html
+
 flag1 hash: b9bbcb33e11b80be759c4e844862482d
 ![Flag 1 located on page source](https://github.com/abge0386/Final-Project/blob/main/Screen%20Shots/Screen%20Shot%202022-03-14%20at%209.02.16%20PM.png)
+
 
 Exploit Used:
 ![Wordpress Enumeration](https://github.com/abge0386/Final-Project/blob/main/Screen%20Shots/Wordpress%20Enumeration.png) 
 ![Wordpress Enumeration Users Identified](https://github.com/abge0386/Final-Project/blob/main/Screen%20Shots/Users%20ID'd.png)
-
 
 
 flag2.txt: TODO: Insert flag2.txt hash value
