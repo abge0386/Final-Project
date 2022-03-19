@@ -16,6 +16,7 @@
   ![Nmap Scan Output](https://github.com/abge0386/Final-Project/blob/main/Screen%20Shots/Screen%20Shot%202022-03-14%20at%208.17.28%20PM.png)
   ![Nmap Scan Output 2](https://github.com/abge0386/Final-Project/blob/main/Screen%20Shots/Screen%20Shot%202022-03-14%20at%208.19.16%20PM.png)
 
+
 This scan identifies the services below as potential points of entry:
 Target 1
 **List of Exposed Services: Upon doing an nmap scan of the network, the following exposed services were revealed**
@@ -52,12 +53,12 @@ Guessed passwored to be "michael"
 grep -rl 'flag1*'
 located in /var/www/html/service.html
 
-
 ![Flag 1 located on page source](https://github.com/abge0386/Final-Project/blob/main/Screen%20Shots/Screen%20Shot%202022-03-14%20at%209.02.16%20PM.png)
 
 
 Exploit Used:
 ![Wordpress Enumeration](https://github.com/abge0386/Final-Project/blob/main/Screen%20Shots/Wordpress%20Enumeration.png) 
+
 ![Wordpress Enumeration Users Identified](https://github.com/abge0386/Final-Project/blob/main/Screen%20Shots/Users%20ID'd.png)
 
 
