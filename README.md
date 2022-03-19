@@ -1,15 +1,15 @@
 # Cybersecurity Red &amp; Blue Teaming Project
 
 ## Red Team: Summary of Operations
-Table of Contents
+### Table of Contents ##
 
-Exposed Services
+*Exposed Services
 
-Critical Vulnerabilities
+*Critical Vulnerabilities
 
-Exploitation
+*Exploitation
 
-Exposed Services
+*Exposed Services
 
 **Nmap scan results for each machine reveal the below services and OS details:**
   __nmap -A 192.168.1.110 or nmap -sV 192.168.1.110__
@@ -19,24 +19,35 @@ Exposed Services
 This scan identifies the services below as potential points of entry:
 Target 1
 List of
-Exposed Services
+Exposed Services: Upon doing an nmap scan of the network, the following exposed services were revealed
+22/TCP SSH -> OpenSSH
+80/TCP HTTP -> Apache
+111/TCP RPCBIND -> 2-4 RPC #100000
+139/TCP Netbios-SSN -> Samba smbd 3.x - 4.x
+445/TCP Netbios-SSN -> Samba smbd 3.x - 4.x
+
+Other Exposed Info: MAC Address: 00:15:5D:00:04:10 (Microsoft)
 
 List of
 Critical
 Vulnerabilities
-TODO: Include vulnerability scan results to prove the identified vulnerabilities.
+Weak/Improper Authentication Restrictions (CWE-307)
+Weak MD5 Hashing for Wordpress (CVE-2012-6706)
+Improper Privilege Managements (CWE-269)
+
 Exploitation
-TODO: Fill out the details below. Include screenshots where possible.
+
 The Red Team was able to penetrate Target 1 and retrieve the following confidential data:
 Target 1
 flag1.txt: b9bbcb33e11b80be759c4e844862482d
 Exploit Used:
-TODO: wp-scan --url http://192.168.1.110/wordpress --enumerate u
-![Wordpress Enumeration] 
+![Wordpress Enumeration](<img width="430" alt="Wordpress Enumeration" src="https://user-images.githubusercontent.com/89937175/159103136-eba8c901-37f1-4e17-8c14-92ebca86a3db.png">
+) 
+![Wordpress Enumeration]() 
 flag2.txt: TODO: Insert flag2.txt hash value
 Exploit Used
 TODO: Identify the exploit used
-TODO: Include the command run
+wp-scan --url http://192.168.1.110/wordpress --enumerate u
 
 
 
