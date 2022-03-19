@@ -18,8 +18,9 @@
 
 This scan identifies the services below as potential points of entry:
 Target 1
-List of
-Exposed Services: Upon doing an nmap scan of the network, the following exposed services were revealed
+**List of
+Exposed Services: Upon doing an nmap scan of the network, the following exposed services were revealed**
+
 22/TCP SSH -> OpenSSH
 
 80/TCP HTTP -> Apache
@@ -33,22 +34,22 @@ Exposed Services: Upon doing an nmap scan of the network, the following exposed 
 Other Exposed Info: MAC Address: 00:15:5D:00:04:10 (Microsoft)
 
 
-List of
+**List of
 Critical
-Vulnerabilities
+Vulnerabilities**
 Weak/Improper Authentication Restrictions (CWE-307)
 Weak MD5 Hashing for Wordpress (CVE-2012-6706)
 Improper Privilege Managements (CWE-269)
 
-Exploitation
-
+**Exploitation**
+Target 1: 
 The Red Team was able to penetrate Target 1 and retrieve the following confidential data:
-Target 1
+flag1 hash: b9bbcb33e11b80be759c4e844862482d
 ![Flag 1 located on page source](https://github.com/abge0386/Final-Project/blob/main/Screen%20Shots/Screen%20Shot%202022-03-14%20at%209.02.16%20PM.png)
-flag1.txt: b9bbcb33e11b80be759c4e844862482d
+
 Exploit Used:
 ![Wordpress Enumeration](https://github.com/abge0386/Final-Project/blob/main/Screen%20Shots/Wordpress%20Enumeration.png) 
-![Wordpress Enumeration]()
+![Wordpress Enumeration Users Identified](https://github.com/abge0386/Final-Project/blob/main/Screen%20Shots/Users%20ID'd.png)
 
 
 
