@@ -18,8 +18,7 @@
 
 This scan identifies the services below as potential points of entry:
 Target 1
-**List of
-Exposed Services: Upon doing an nmap scan of the network, the following exposed services were revealed**
+**List of Exposed Services: Upon doing an nmap scan of the network, the following exposed services were revealed**
 
 22/TCP SSH -> OpenSSH
 
@@ -34,9 +33,7 @@ Exposed Services: Upon doing an nmap scan of the network, the following exposed 
 Other Exposed Info: MAC Address: 00:15:5D:00:04:10 (Microsoft)
 
 
-**List of
-Critical
-Vulnerabilities**
+**List of Critical Vulnerabilities**
 Weak/Improper Authentication Restrictions (CWE-307)
 
 Weak MD5 Hashing for Wordpress (CVE-2012-6706)
@@ -71,8 +68,8 @@ cd /var
 cd /wwww
 ls flag2.txt
 cat txt file
-Exploit Used
-TODO: Identify the exploit used
+
+![Flag 2](https://github.com/abge0386/Final-Project/blob/main/Screen%20Shots/Flag%202.png)
 
 
 
