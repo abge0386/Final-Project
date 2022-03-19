@@ -41,9 +41,10 @@ The Red Team was able to penetrate Target 1 and retrieve the following confident
 Target 1
 flag1.txt: b9bbcb33e11b80be759c4e844862482d
 Exploit Used:
-![Wordpress Enumeration](<img width="430" alt="Wordpress Enumeration" src="https://user-images.githubusercontent.com/89937175/159103136-eba8c901-37f1-4e17-8c14-92ebca86a3db.png">
-) 
 ![Wordpress Enumeration]() 
+![Wordpress Enumeration]()
+
+
 flag2.txt: TODO: Insert flag2.txt hash value
 Exploit Used
 TODO: Identify the exploit used
