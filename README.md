@@ -21,12 +21,17 @@ Target 1
 List of
 Exposed Services: Upon doing an nmap scan of the network, the following exposed services were revealed
 22/TCP SSH -> OpenSSH
+
 80/TCP HTTP -> Apache
+
 111/TCP RPCBIND -> 2-4 RPC #100000
+
 139/TCP Netbios-SSN -> Samba smbd 3.x - 4.x
+
 445/TCP Netbios-SSN -> Samba smbd 3.x - 4.x
 
 Other Exposed Info: MAC Address: 00:15:5D:00:04:10 (Microsoft)
+
 
 List of
 Critical
